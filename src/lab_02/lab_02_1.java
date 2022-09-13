@@ -23,5 +23,13 @@ public class lab_02_1 {
 
         float yourBMI = weight / (height * 2);
         System.out.printf("Your BMI number is %f\n", yourBMI);
+        if (yourBMI < 18.5f)
+            System.out.println("You are Underweight!");
+        else if (yourBMI < 25f)
+            System.out.println("You are in Normal weight!");
+        else if (yourBMI < 30f)
+            System.out.println("You are Overweight!");
+        else
+            System.out.println("You are Obesity!");
     }
 }
