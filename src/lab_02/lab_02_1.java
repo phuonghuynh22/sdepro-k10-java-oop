@@ -1,8 +1,8 @@
-package lesson_01;
+package lab_02;
 
 import java.util.Scanner;
 
-public class lab_02_1b {
+public class lab_02_1 {
     public static void main(String[] args) {
         /*
         Lab 2.1:
@@ -23,6 +23,5 @@ public class lab_02_1b {
 
         float yourBMI = weight / (height * 2);
         System.out.printf("Your BMI number is %f\n", yourBMI);
-
     }
 }

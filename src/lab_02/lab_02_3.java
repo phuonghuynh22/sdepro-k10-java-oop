@@ -2,7 +2,7 @@ package lab_02;
 
 import java.util.Scanner;
 
-public class lab_02_1 {
+public class lab_02_3 {
     public static void main(String[] args) {
         /*
         Lab 2.1:
