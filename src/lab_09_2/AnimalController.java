@@ -5,18 +5,22 @@ import java.util.*;
 
 public class AnimalController {
 
-    public String getWinner(List<Animal> animalList) {
+    public void getWinner(List<Animal> animalList) {
         String winnerName = "";
+        String animalName = "";
         int winnerSpeed = 0;
+        int aninalSpeed = 0;
 
         for (int i = 0; i < animalList.size(); i++) {
-            if (animalList.get(i).getRandomSpeed() > winnerSpeed) {
-                winnerSpeed = animalList.get(i).getRandomSpeed();
-                winnerName = animalList.get(i).getName();
+            aninalSpeed = animalList.get(i).getRandomSpeed();
+            animalName = animalList.get(i).getName();
+            System.out.println(animalName + " - speed " + aninalSpeed + " km/h");
+            if (aninalSpeed > winnerSpeed) {
+                winnerSpeed = aninalSpeed;
+                winnerName = animalName;
             }
         }
-        System.out.println(winnerSpeed);
-        return winnerName;
+        System.out.print("The winner is " + winnerName);
+        System.out.print(" - with the speed " + winnerSpeed + " km/h!");
     }
-
 }

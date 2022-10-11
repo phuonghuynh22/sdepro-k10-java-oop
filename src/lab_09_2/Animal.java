@@ -13,19 +13,7 @@ public class Animal {
         return name;
     }
 
-    public void setSpeed(int speed) {
-        this.speed = speed;
-    }
-
     public int getRandomSpeed(){
         return speed;
-    }
-
-    @Override
-    public String toString() {
-        return "Animal{" +
-                "name='" + name + '\'' +
-                ", speed=" + speed +
-                '}';
     }
 }

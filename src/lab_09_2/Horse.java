@@ -3,11 +3,15 @@ package lab_09_2;
 import java.security.SecureRandom;
 
 public class Horse extends Animal{
+
+    @Override
+    public void setName(String name) {
+        super.setName(name + " horse");
+    }
+
     @Override
     public int getRandomSpeed() {
-        int horseSpeed = new SecureRandom().nextInt(75);
-        //int msxSpeed = 75;
-
-        return horseSpeed;
+        int speed = new SecureRandom().nextInt(75);
+        return speed;
     }
 }

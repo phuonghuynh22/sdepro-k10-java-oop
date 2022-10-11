@@ -4,9 +4,13 @@ import java.security.SecureRandom;
 
 public class Dog extends Animal{
     @Override
+    public void setName(String name) {
+        super.setName(name + " dog");
+    }
+
+    @Override
     public int getRandomSpeed() {
-        int dogSpeed = new SecureRandom().nextInt(60);
-        //int msxSpeed = 60;
-        return dogSpeed;
+        int speed = new SecureRandom().nextInt(60);
+        return speed;
     }
 }
