@@ -59,10 +59,7 @@ public class Animal {
         }
 
         public Animal build () {
-
             return new Animal(this);
         }
-
     }
-
 }

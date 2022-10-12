@@ -1,5 +1,7 @@
 package lab_10;
 
+import lab_10.Animal.Builder;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -32,7 +34,7 @@ public class AnimalController {
     }
 
     public Animal addAnimal (String name, int maxSpeed, boolean flyable){
-        Animal.Builder builder  =  new Animal.Builder();
+        Builder builder  =  new Builder();
         builder
                 .setName(name)
                 .setSpeed(maxSpeed)
